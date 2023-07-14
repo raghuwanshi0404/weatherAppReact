@@ -6,8 +6,8 @@ import './App.css';
 
 function App() {
 
-
-  const apiKey = "f56f24967aaf51182d1d4df628297c6d"
+  // `https://api.openweathermap.org/data/2.5/weather?q=${form[0].value}&appid=d42251a0a9d8f7e6b274dd1ecf3c1edc&units=metric`)
+  const apiKey = "d42251a0a9d8f7e6b274dd1ecf3c1edc"
   const [inputCity, setInputCity] = useState("")
   const [data, setData] = useState({})
 
@@ -46,7 +46,7 @@ function App() {
             onClick={handleSearch}
           >Search</button>
         </div>
-      </div>
+      
 
       {Object.keys(data).length > 0 &&
         <div className="col-md-12 text-center mt-5">
@@ -62,7 +62,7 @@ function App() {
           </div>
         </div>
       }
-
+</div>
     </div>
   );
 }
